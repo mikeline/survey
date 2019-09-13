@@ -1,0 +1,34 @@
+i {
+    border: solid gray;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.answer-toggle {
+    padding-bottom: 10px;
+}
+
+.answer-bordering {
+    border: 1px solid gray;
+}
+
+input[type=number], input[type=number]:focus {
+    border: none;
+    border-bottom: 2px solid dodgerblue;
+}
+

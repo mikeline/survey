@@ -1,0 +1,99 @@
+.survey-item {
+    width: 45%;
+    display: inline-block;
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition:    opacity 0.5s;
+    -ms-transition:     opacity 0.5s;
+    -o-transition:      opacity 0.5s;
+    transition:         opacity 0.5s;
+}
+.delete:hover {
+    opacity: 1;
+}
+.delete:before, .delete:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition:    background-color 0.5s;
+    -ms-transition:     background-color 0.5s;
+    -o-transition:      background-color 0.5s;
+    transition:         background-color 0.5s;
+}
+.delete:before {
+    transform: rotate(45deg);
+}
+.delete:after {
+    transform: rotate(-45deg);
+}
+
+.delete:hover::before, .delete:hover::after {
+    background-color: rgba(255,3,9,0.66);
+}
+
+
+.show-answer {
+    width: 45%;
+    height: 100%;
+    color: black;
+    display: inline-block;
+    border-collapse: collapse;
+    position: absolute;
+    border-radius: 0; !important;
+    border: 1px solid rgba(0, 43, 255, 0.7);
+    border-bottom: 0px;
+    font-size: 1.2em;
+    line-height: 75px;
+    -webkit-transition: color 0.5s;
+    -moz-transition:    color 0.5s;
+    -ms-transition:     color 0.5s;
+    -o-transition:      color 0.5s;
+    transition:         color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition:    background-color 0.5s;
+    -ms-transition:     background-color 0.5s;
+    -o-transition:      background-color 0.5s;
+    transition:         background-color 0.5s;
+}
+
+.show-answer:hover {
+    background: rgba(0, 43, 255, 0.7);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-underline: none;
+}
+
+
+.item-container a:hover {
+    color: white;
+    text-decoration: none;
+    text-underline: none;
+}
+
+.show-answer-text {
+
+}
+
+.item-container {
+    position: relative;
+}
+
+
+
+
+
+
